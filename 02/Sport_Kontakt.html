@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontankt</title>
+    <style>
+
+        #NavigationBar 
+        {
+            overflow: auto;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    
+        #NavigationBar a 
+        {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 15px 20px;
+          text-decoration: none;
+          float: left;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #NavigationBar a:hover:not(.active)
+        {
+            background-color: #111;
+        }
+
+        body /*Background image*/
+        {
+            background-image: url(Slike/Background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        label
+        {
+            width: 150px;
+            text-align: left;
+            float: left;
+        }
+
+        #Forma
+        {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+            margin-left: 30px;
+            margin-right: 70%;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        #inp
+        {
+            width: 250px;
+            height: 25px;
+            border-color: whitesmoke;
+            border-radius: 5px;
+        }
+
+        button
+        {
+            display: inline-block;
+            background-color: green;
+            padding: 8px 10px;
+            color: white;
+            border-radius: 10px;
+            margin-left: 155px;
+        }
+
+        #tel
+        {
+            width: 40px;
+            height: 25px;
+            border-color: whitesmoke;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="NavigationBar">
+        <a href="Sport_Index.html">Home</a>
+        <a href="Sport_Kontakt.html">Kontakt</a>
+    </div>
+
+
+<form id="Forma">
+    <i><strong>Vase informacije</strong></i>
+    <hr>
+    
+    <label for="textName">Ime <span style="color: red;">*</span> </label>
+    <input type="text" id="inp" required> <br>
+
+    <label for="textEmail">Email<span style="color: red;">*</span> </label>
+    <input type="text" id="inp" required> <br>
+
+    <label for="textTelefon">Telefon</label>
+    <input type="tel" id="tel" name="phone">
+    <input type="tel" id="tel" name="phone">
+    <input type="tel" id="tel" name="phone"> <br>
+
+    <label for="textCountry">Drzava:</label>
+    <select name="drzava" id="inp">
+        <option value="Srbija">Srbija</option>
+        <option value="BiH">Bosna i Hercegovina</option>
+        <option value="Crna Gora">Crna Gora</option>
+    </select> <br>
+
+    <label for="textPoruka">Poruka<span style="color: red;">*</span> </label>
+    <textarea name="komentari" id="comment" rows="10" cols="50" required></textarea>
+    
+
+    <button>Submit</button>
+</form>
+
+
+
+</body>
+
+</html>

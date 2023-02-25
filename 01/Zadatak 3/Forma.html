@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form</title>
+    <style>
+        label
+        {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="strana10.html" method="GET" style="background-color: rgb(196,195,195); width: 320px;">
+
+        <fieldset>
+            <legend>My first form</legend>
+
+            <label for="textName">First name:</label>
+            <input type="text" id="textName" name="name"> <br>
+
+            <label for="textLast">Last name:</label>
+            <input type="text" id="textLast" name="lastName"> <br>
+
+            <label for="textPassword">Password:</label>
+            <input type="password" id="textPassword" name="password"> <br>
+
+            <label for="textEmail">E-mail:</label>
+            <input type="text" id="textEmail" name="e-mail"> <br>
+            <hr>
+
+            <label for="textGender">Gender:</label> <br>
+            <input type="radio" name="gender" id="textMale" value="male">
+            <label for="textMale">Male</label> <br>
+            <input type="radio" name="gender" id="textFemale" value="female">
+            <label for="textFemale">Female</label> <br>
+
+            <label for="textCourse">Select Course:</label>
+            <select name="select course" id="textCourse">
+                <option value="ASP.NET MVC">ASP.NET MVC</option>
+                <option value="ASP.NET">ASP.NET</option>
+                <option value="ASP">ASP</option>
+            </select> <br>
+            <hr>
+
+            <textarea cols="36" rows="15">Write your comments here...</textarea>
+            <hr>
+
+            <label for="textTraining">Training:</label> <br>
+            <input type="checkbox" id="elementary" name="elementary" value="Elementary">
+            <label for="elementary">Elementary</label> <br>
+            <input type="checkbox" id="advanced" name="advanced" value="Advanced">
+            <label for="advanced">Advanced</label> <br>
+            <input type="checkbox" id="proficiency" name="proficiency" value="Proficiency">
+            <label for="proficiency">Proficiency</label> <br>
+            <hr>
+
+            <button id="submitButton" type="submit">Submit</button>
+            <button id="resetButton" type="reset">Reset</button>
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
